@@ -1,5 +1,14 @@
-var b = document.querySelector(".left");
+const leftBtn = document.querySelector(".left");
+const rightBtn = document.querySelector(".right");
 
-b.addEventListener("click", () => console.log("clicked"));
+const imageSlide = document.querySelector(".image-slider-test img");
 
-console.log("heres");
+leftBtn.addEventListener("click", () => {
+    imageSlide.className = " left";
+});
+
+rightBtn.addEventListener("click", () => {
+    imageSlide.className = " right";
+});
+
+ 
